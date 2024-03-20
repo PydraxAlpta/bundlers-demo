@@ -1,0 +1,19 @@
+{
+  "name": "bundlers-demo",
+  "version": "1.0.0",
+  "description": "A demo for using bundlers such as webpack",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PydraxAlpta/bundlers-demo.git"
+  },
+  "author": "PydraxAlpta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PydraxAlpta/bundlers-demo/issues"
+  },
+  "homepage": "https://github.com/PydraxAlpta/bundlers-demo#readme"
+}
