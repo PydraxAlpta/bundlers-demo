@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Bundlers</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>JavaScript Bundlers</h1>
+      <h1>JavaScript Bundlers</h1>
     </header>
     <main>
-        <section id="introduction">
-            <h2>What are JavaScript Bundlers?</h2>
-            <p>A JavaScript bundler is a tool that combines multiple JavaScript files or modules into a single file.</p>
-        </section>
-        <section id="usecases">
-            <h2>Use Cases</h2>
-            <p>JavaScript bundlers are used to:</p>
-            <ul>
-                <li>Optimize performance by reducing the number of HTTP requests.</li>
-                <li>Bundle dependencies for easier management.</li>
-                <li>Enable modular development using tools like CommonJS or ES6 modules.</li>
-            </ul>
-        </section>
-        <section id="examples">
-            <h2>Examples of JavaScript Bundlers</h2>
-            <p>Some popular JavaScript bundlers include:</p>
-            <ul>
-                <li>Webpack</li>
-                <li>Parcel</li>
-                <li>Rollup</li>
-                <li>Browserify</li>
-            </ul>
-        </section>
-        <section id="webpack">
-            <h2>How to Install and Use Webpack</h2>
-            <p>To install Webpack globally using npm, run:</p>
-            <pre><code>npm install -g webpack webpack-cli</code></pre>
-            <p>After installing Webpack, create a <code>webpack.config.js</code> file in your project root directory to configure Webpack.</p>
-            <p>An example of a basic <code>webpack.config.js</code> file:</p>
-            <pre><code>const path = require('path');
-
-module.exports = {
-    entry: './src/index.js',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
-    }
-};</code></pre>
-            <p>Finally, run Webpack to bundle your JavaScript files:</p>
-            <pre><code>webpack</code></pre>
-        </section>
+      <nav id="nav-bar">
+        <button class="nav-btn" data-target="introduction">Introduction</button>
+        <button class="nav-btn" data-target="usecases">Usecases</button>
+        <button class="nav-btn" data-target="examples">Examples</button>
+        <button class="nav-btn" data-target="webpack">Installation</button>
+      </nav>
+      <section id="introduction">
+        <h2>What are JavaScript Bundlers?</h2>
+        <p>
+          A JavaScript bundler is a tool that combines multiple JavaScript files
+          or modules into a single file.
+        </p>
+      </section>
+      <section id="usecases">
+        <h2>Use Cases</h2>
+        <p>JavaScript bundlers are used to:</p>
+        <ul>
+          <li>Optimize performance by reducing the number of HTTP requests.</li>
+          <li>Bundle dependencies for easier management.</li>
+          <li>
+            Enable modular development using tools like CommonJS or ES6 modules.
+          </li>
+        </ul>
+      </section>
+      <section id="examples">
+        <h2>Examples of JavaScript Bundlers</h2>
+        <p>Some popular JavaScript bundlers include:</p>
+        <ul>
+          <li>Webpack</li>
+          <li>Parcel</li>
+          <li>Rollup</li>
+          <li>Browserify</li>
+        </ul>
+      </section>
+      <section id="webpack">
+        <h2>How to Install and Use Webpack</h2>
+        <p>To install Webpack globally using npm, run:</p>
+        <pre><code>npm install -g webpack webpack-cli</code></pre>
+        <p>
+          After installing Webpack, create a <code>webpack.config.js</code> file
+          in your project root directory to configure Webpack.
+        </p>
+        <p>An example of a basic <code>webpack.config.js</code> file:</p>
+        <pre id="webpack-example"></pre>
+        <p>Finally, run Webpack to bundle your JavaScript files:</p>
+        <pre><code>webpack</code></pre>
+      </section>
     </main>
-    <script src="index.js"></script>
-</body>
+  </body>
 </html>
-
