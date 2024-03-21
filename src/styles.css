@@ -18,7 +18,7 @@ h2 {
 }
 
 main {
-  padding: 20px;
+  padding: 20px 20em;
 }
 
 section {
@@ -45,7 +45,7 @@ nav {
   justify-content: start;
   align-items: flex-end;
   gap: 1em;
-  width: 50%;
+  padding-bottom: 2em;
 }
 
 .nav-btn {
@@ -57,7 +57,7 @@ nav {
   border-color: #333;
   padding: 0.5em 1em;
   margin: 0;
-  transition: all linear 0.25s;
+  transition: all ease-in-out 0.25s;
   flex: 0.5;
   &.active {
     border-width: 0 0 2px;
@@ -65,4 +65,8 @@ nav {
     background-color: #e3e3f3;
     border-color: red;
   }
+}
+li {
+  padding: 0.5em 0;
+  list-style-position: inside;
 }
